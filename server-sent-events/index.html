@@ -1,0 +1,13 @@
+<!doctype HTML>
+<title>Time Service</title>
+<div id="history"></div>
+<script>
+	var eventSource = new EventSource("/time");
+	eventSource.addEventListener("message", function(event) {
+		var container = document.createElement("p");
+		container.innerText = event.data;
+		var history = document.querySelector("#history");
+		history.appendChild(container);
+		history.scrollTop = history.scrollHeight;
+	});
+</script>
