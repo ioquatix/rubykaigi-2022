@@ -1,19 +1,19 @@
 # Streaming CSV
 
-This example shows how to use streaming server side events.
+This example shows how to stream CSV records. You can do something similar with [newline-delimited JSON](http://ndjson.org).
 
 ## Usage
 
 Start the server:
 
-```
-falcon
+``` bash
+$ falcon
 ```
 
 Then stream the output:
 
-```
-> curl --insecure -N https://localhost:9292
+``` bash
+$ curl --insecure -N https://localhost:9292
 Hello,World
 Hello,World
 Hello,World

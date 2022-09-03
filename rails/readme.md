@@ -8,8 +8,8 @@ Rails 7.1 will likely introduce per-fiber ActiveRecord connection pool. This mea
 
 First, try it with per-thread isolation level. Start the server:
 
-```
-ISOLATION_LEVEL=thread bundle exec falcon serve
+``` bash
+$ ISOLATION_LEVEL=thread bundle exec falcon serve
 ```
 
 Then try making some requests:
@@ -54,8 +54,8 @@ You will see the request time starts to get slower and slower as each subsequent
 
 Let's try using per-fiber ActiveRecord connection pool. Start the server:
 
-```
-ISOLATION_LEVEL=thread bundle exec falcon serve
+``` bash
+$ ISOLATION_LEVEL=thread bundle exec falcon serve
 ```
 
 Then try making some requests:

@@ -6,8 +6,8 @@ This example shows how to use streaming server side events.
 
 Start the server:
 
-```
-falcon
+``` bash
+$ falcon
 ```
 
 Then open the page with a web browser: <https://localhost:9292>.
