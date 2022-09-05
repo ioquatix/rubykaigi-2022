@@ -1,0 +1,3 @@
+[submodule "queueing/wrk"]
+	path = queueing/wrk
+	url = https://github.com/ioquatix/wrk
